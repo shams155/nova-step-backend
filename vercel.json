@@ -1,13 +1,9 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/(.*\\.(css|js|png|jpg|jpeg|svg|ico))",
-      "continue": true
+      "source": "/api/:path*",
+      "destination": "/server.js"
     }
   ]
 }
