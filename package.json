@@ -1,0 +1,12 @@
+{
+  "name": "nova-step-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NOVA STEP shoe store with a simple Node.js order backend",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

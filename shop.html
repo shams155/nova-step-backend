@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA STEP — Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <span>🚚 Free Shipping on Orders Over Rs. 5,000</span>
+  <span>100% Original & Premium Quality</span>
+  <div class="top-right">Track Order &nbsp; | &nbsp; Help Center &nbsp; | &nbsp; PK Pakistan</div>
+</div>
+
+<header class="header">
+  <a class="logo" href="index.html">
+    <div class="logo-mark">N</div>
+    <div><strong>NOVA STEP</strong><small>WALK WITH CONFIDENCE</small></div>
+  </a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a class="active" href="shop.html">Shop</a>
+    <a href="shop.html?category=sneakers">Sneakers</a>
+    <a href="shop.html?category=formal">Formal</a>
+    <a href="shop.html?category=chelsea">Chelsea Boots</a>
+    <a href="shop.html">Men</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="actions">
+    <span class="search-btn" title="Search">⌕</span>
+    <span class="account-btn" title="Account">♙</span>
+    <span class="wishlist-btn" title="Wishlist">♡<b id="wishCount">0</b></span>
+    <span class="cart cart-btn" title="Cart">🛒<b id="cartCount">0</b></span>
+  </div>
+</header>
+
+<main>
+<section class="shop-hero">
+  <p class="gold">NOVA STEP COLLECTION</p>
+  <h1>Find Your Perfect Pair.</h1>
+  <p>Premium sneakers, formal shoes and Chelsea boots for every occasion.</p>
+</section>
+
+<section class="shop-section container" id="products">
+  <div class="shop-toolbar">
+    <div>
+      <p class="gold">SHOP ALL</p>
+      <h2>Our Collection</h2>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="sneakers">Sneakers</button>
+      <button class="filter-btn" data-filter="formal">Formal</button>
+      <button class="filter-btn" data-filter="chelsea">Chelsea Boots</button>
+    </div>
+  </div>
+
+  <div class="shop-grid">
+    <article class="card shop-card" data-category="sneakers" data-id="1" data-name="Urban Flex Sneakers" data-price="8999">
+      <div class="pic"><span>NEW</span><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=90" alt="Urban Flex Sneakers"></div>
+      <div class="card-body"><h3>Urban Flex Sneakers</h3><p>Premium Everyday Sneaker</p><div class="rating">★★★★★ <small>(24)</small></div><strong>Rs. 8,999</strong><div class="product-actions"><a class="details-btn" href="product.html?id=1">VIEW DETAILS</a><button class="add" data-product="1">ADD TO CART</button></div></div>
+    </article>
+
+    <article class="card shop-card" data-category="formal" data-id="2" data-name="Royal Oxford Formal" data-price="12499">
+      <div class="pic"><span>BEST SELLER</span><img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=900&q=90" alt="Royal Oxford Formal"></div>
+      <div class="card-body"><h3>Royal Oxford Formal</h3><p>Classic Formal Collection</p><div class="rating">★★★★★ <small>(18)</small></div><strong>Rs. 12,499</strong><div class="product-actions"><a class="details-btn" href="product.html?id=2">VIEW DETAILS</a><button class="add" data-product="2">ADD TO CART</button></div></div>
+    </article>
+
+    <article class="card shop-card" data-category="chelsea" data-id="3" data-name="Classic Chelsea Boots" data-price="13499">
+      <div class="pic"><span>NEW</span><img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=900&q=90" alt="Classic Chelsea Boots"></div>
+      <div class="card-body"><h3>Classic Chelsea Boots</h3><p>Bold. Classy. Timeless.</p><div class="rating">★★★★★ <small>(16)</small></div><strong>Rs. 13,499</strong><div class="product-actions"><a class="details-btn" href="product.html?id=3">VIEW DETAILS</a><button class="add" data-product="3">ADD TO CART</button></div></div>
+    </article>
+
+    <article class="card shop-card" data-category="sneakers" data-id="4" data-name="Nova White Sneakers" data-price="9499">
+      <div class="pic"><span>NEW</span><img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=90" alt="Nova White Sneakers"></div>
+      <div class="card-body"><h3>Nova White Sneakers</h3><p>Clean Minimal Street Style</p><div class="rating">★★★★★ <small>(21)</small></div><strong>Rs. 9,499</strong><div class="product-actions"><a class="details-btn" href="product.html?id=4">VIEW DETAILS</a><button class="add" data-product="4">ADD TO CART</button></div></div>
+    </article>
+
+    <article class="card shop-card" data-category="formal" data-id="5" data-name="Elite Derby Formal" data-price="11499">
+      <div class="pic"><span>PREMIUM</span><img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=900&q=90" alt="Elite Derby Formal"></div>
+      <div class="card-body"><h3>Elite Derby Formal</h3><p>Sharp Office & Occasion Shoe</p><div class="rating">★★★★★ <small>(14)</small></div><strong>Rs. 11,499</strong><div class="product-actions"><a class="details-btn" href="product.html?id=5">VIEW DETAILS</a><button class="add" data-product="5">ADD TO CART</button></div></div>
+    </article>
+
+    <article class="card shop-card" data-category="chelsea" data-id="6" data-name="Suede Chelsea" data-price="12999">
+      <div class="pic"><span>LIMITED</span><img src="https://images.unsplash.com/photo-1520639888713-7851133b0e72?auto=format&fit=crop&w=900&q=90" alt="Suede Chelsea"></div>
+      <div class="card-body"><h3>Suede Chelsea</h3><p>Smart Casual Boot</p><div class="rating">★★★★★ <small>(12)</small></div><strong>Rs. 12,999</strong><div class="product-actions"><a class="details-btn" href="product.html?id=6">VIEW DETAILS</a><button class="add" data-product="6">ADD TO CART</button></div></div>
+    </article>
+  </div>
+</section>
+</main>
+
+<div class="search-modal" id="searchModal"><div class="search-box"><button class="close-panel" id="closeSearch">×</button><p class="gold">SEARCH NOVA STEP</p><h2>Find Your Shoes</h2><input id="searchInput" type="search" placeholder="Search sneakers, formal shoes, Chelsea boots..."><div id="searchResults"></div></div></div>
+
+<aside class="side-panel" id="cartPanel"><div class="panel-head"><h2>Your Cart</h2><button class="close-panel" id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">Rs. 0</strong></div><button class="checkout-btn" id="checkoutBtn">CHECKOUT →</button></aside>
+
+<aside class="side-panel" id="wishPanel"><div class="panel-head"><h2>Wishlist</h2><button class="close-panel" id="closeWish">×</button></div><div id="wishItems"></div></aside>
+
+<div class="toast" id="toast"></div>
+
+<footer>
+  <div class="copyright">© 2026 NOVA STEP. All Rights Reserved.</div>
+</footer>
+<script src="shop.js"></script>
+</body>
+</html>

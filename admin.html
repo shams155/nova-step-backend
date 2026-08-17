@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA STEP — Admin Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+<header class="admin-top">
+  <a class="logo" href="index.html"><div class="logo-mark">N</div><div><strong>NOVA STEP</strong><small>ADMIN PANEL</small></div></a>
+  <div class="admin-top-right"><a href="index.html">VIEW STORE ↗</a><span id="adminClock"></span></div>
+</header>
+
+<main class="admin-page">
+  <div class="admin-title">
+    <div><p class="gold">STORE MANAGEMENT</p><h1>Dashboard</h1><p>Manage your NOVA STEP orders from one place.</p></div>
+    <button id="clearOrders" class="danger-btn">CLEAR ALL ORDERS</button>
+  </div>
+
+  <section class="stats-grid">
+    <div class="stat-card"><span>TOTAL ORDERS</span><strong id="statOrders">0</strong><small>All saved orders</small></div>
+    <div class="stat-card"><span>TOTAL SALES</span><strong id="statSales">Rs. 0</strong><small>Order value</small></div>
+    <div class="stat-card"><span>PENDING</span><strong id="statPending">0</strong><small>Needs attention</small></div>
+    <div class="stat-card"><span>DELIVERED</span><strong id="statDelivered">0</strong><small>Completed orders</small></div>
+  </section>
+
+  <section class="admin-toolbar">
+    <div class="admin-search"><input id="orderSearch" type="search" placeholder="Search order, customer or phone..."></div>
+    <div class="status-filters">
+      <button class="status-filter active" data-filter="all">All</button>
+      <button class="status-filter" data-filter="Pending">Pending</button>
+      <button class="status-filter" data-filter="Processing">Processing</button>
+      <button class="status-filter" data-filter="Shipped">Shipped</button>
+      <button class="status-filter" data-filter="Delivered">Delivered</button>
+    </div>
+  </section>
+
+  <section class="orders-section">
+    <div class="section-head"><div><p class="gold">ORDERS</p><h2>Recent Orders</h2></div><span id="orderCountLabel"></span></div>
+    <div class="orders-table-wrap">
+      <table class="orders-table">
+        <thead><tr><th>ORDER</th><th>CUSTOMER</th><th>ITEMS</th><th>TOTAL</th><th>STATUS</th><th>DATE</th><th></th></tr></thead>
+        <tbody id="ordersBody"></tbody>
+      </table>
+    </div>
+    <div id="noOrders" class="no-orders hidden"><h3>No orders found</h3><p>Place an order from the store and it will appear here.</p></div>
+  </section>
+</main>
+
+<div class="admin-modal" id="orderModal">
+  <div class="admin-modal-box">
+    <button class="modal-x" id="closeOrder">×</button>
+    <p class="gold">ORDER DETAILS</p><h2 id="modalOrderId">Order</h2>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

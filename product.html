@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA STEP — Product</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="logo" href="index.html"><div class="logo-mark">N</div><div><strong>NOVA STEP</strong><small>WALK WITH CONFIDENCE</small></div></a>
+<button class="menu-btn" id="menuBtn">☰</button>
+<nav id="nav"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="shop.html?category=sneakers">Sneakers</a><a href="shop.html?category=formal">Formal</a><a href="shop.html?category=chelsea">Chelsea Boots</a><a href="index.html#contact">Contact</a></nav>
+<div class="actions"><span class="cart cart-btn">🛒<b id="cartCount">0</b></span></div>
+</header>
+
+<main class="product-page container">
+  <a class="back-link" href="shop.html">← Back to Shop</a>
+  <div class="detail-wrap">
+    <div class="detail-image"><img id="productImage" src="" alt=""></div>
+    <div class="detail-info">
+      <p class="gold" id="productCategory">NOVA STEP COLLECTION</p>
+      <h1 id="productName">Product</h1>
+      <div class="detail-rating">★★★★★ <span>(24 reviews)</span></div>
+      <strong class="detail-price" id="productPrice">Rs. 0</strong>
+      <p class="detail-description">Designed for confident everyday style, with a premium finish and comfortable fit.</p>
+      <h4>Select Size</h4>
+      <div class="sizes" id="sizes"><button>39</button><button>40</button><button>41</button><button>42</button><button>43</button><button>44</button></div>
+      <p class="size-note" id="sizeNote">Please select a size.</p>
+      <div class="detail-row"><button class="detail-add" id="addProduct">ADD TO CART →</button></div>
+    </div>
+  </div>
+</main>
+
+<aside class="side-panel" id="cartPanel"><div class="panel-head"><h2>Your Cart</h2><button class="close-panel" id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">Rs. 0</strong></div><button class="checkout-btn" id="checkoutBtn">CHECKOUT →</button></aside>
+<div class="toast" id="toast"></div>
+<script src="product.js"></script>
+</body>
+</html>

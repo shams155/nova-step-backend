@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA STEP — Checkout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">
+    <div class="logo-mark">N</div>
+    <div><strong>NOVA STEP</strong><small>WALK WITH CONFIDENCE</small></div>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?category=sneakers">Sneakers</a>
+    <a href="shop.html?category=formal">Formal</a>
+    <a href="shop.html?category=chelsea">Chelsea Boots</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="actions"><span class="cart">🛒<b id="cartCount">0</b></span></div>
+</header>
+
+<main class="checkout-page container">
+  <div class="checkout-heading">
+    <p class="gold">NOVA STEP</p>
+    <h1>Checkout</h1>
+    <p>Complete your details and place your order.</p>
+  </div>
+
+  <div id="emptyCheckout" class="empty-checkout hidden">
+    <h2>Your cart is empty.</h2>
+    <p>Add a product before coming to checkout.</p>
+    <a href="shop.html" class="checkout-link">CONTINUE SHOPPING →</a>
+  </div>
+
+  <div id="checkoutContent" class="checkout-grid">
+    <section class="checkout-form-box">
+      <form id="orderForm">
+        <div class="form-section">
+          <h2>Customer Information</h2>
+          <div class="form-row">
+            <label>Full Name
+              <input id="fullName" required type="text" placeholder="Enter your full name">
+            </label>
+            <label>Phone Number
+              <input id="phone" required type="tel" placeholder="03XX XXXXXXX">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Delivery Address</h2>
+          <label>Complete Address
+            <textarea id="address" required rows="4" placeholder="House / Street / Area"></textarea>
+          </label>
+          <div class="form-row">
+            <label>City
+              <input id="city" required type="text" placeholder="e.g. Lahore">
+            </label>
+            <label>Postal Code
+              <input id="postal" type="text" placeholder="Optional">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Payment Method</h2>
+          <label class="payment-option">
+            <input type="radio" checked name="payment" value="Cash on Delivery">
+            <span><strong>Cash on Delivery</strong><small>Pay when your order arrives.</small></span>
+          </label>
+        </div>
+
+        <button class="place-order" type="submit">PLACE ORDER →</button>
+        <button class="whatsapp-order" id="whatsappOrder" type="button">ORDER ON WHATSAPP ↗</button>
+      </form>
+    </section>
+
+    <aside class="order-summary">
+      <p class="gold">YOUR ORDER</p>
+      <h2>Order Summary</h2>
+      <div id="summaryItems"></div>
+      <div class="summary-line"><span>Subtotal</span><strong id="subtotal">Rs. 0</strong></div>
+      <div class="summary-line"><span>Delivery</span><strong>FREE</strong></div>
+      <div class="summary-total"><span>Total</span><strong id="grandTotal">Rs. 0</strong></div>
+    </aside>
+  </div>
+</main>
+
+<div id="successModal" class="success-modal">
+  <div class="success-box">
+    <div class="success-icon">✓</div>
+    <p class="gold">ORDER CONFIRMED</p>
+    <h2>Thank You!</h2>
+    <p>Your NOVA STEP order has been received successfully.</p>
+    <p class="order-number" id="orderNumber"></p>
+    <button id="continueShopping">CONTINUE SHOPPING →</button>
+  </div>
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>
